@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchPosts = () => {
-      fetch("http://127.0.0.1:5000/api/posts")
+      fetch("http://127.0.0.1:5001/api/posts")
         .then((res) => res.json())
         .then((data) => {
           setPosts(data.posts);

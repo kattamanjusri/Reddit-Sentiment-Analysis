@@ -6,7 +6,7 @@ function Trending() {
 
   useEffect(() => {
     const fetchTrending = () => {
-      fetch("http://127.0.0.1:5000/api/posts")
+      fetch("http://127.0.0.1:5001/api/posts")
         .then((res) => res.json())
         .then((data) => {
           const sorted = data.posts.sort(

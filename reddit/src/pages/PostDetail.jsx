@@ -14,7 +14,7 @@ function PostDetail() {
     const controller = new AbortController();
     setLoading(true);
 
-    fetch(`http://127.0.0.1:5000/api/comments/${id}`, {
+    fetch(`http://127.0.0.1:5001/api/comments/${id}`, {
       signal: controller.signal,
     })
       .then((res) => {
